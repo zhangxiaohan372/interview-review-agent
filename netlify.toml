@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build-only"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/ai/*"
+  to = "/.netlify/functions/analyze"
+  status = 200
